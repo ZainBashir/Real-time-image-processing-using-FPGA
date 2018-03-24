@@ -12,3 +12,5 @@ To display the processed image, a small matlab code is written to reshape the pr
 A few zeros are added to account for missing zeros (the code is not perfect but works)
 
 To implement a different filter just change the filter coefficients in the code.
+
+Refer to the pdf fie called FPGA report for an explanation of the code and the stragtegy used to accomplish the given task.
