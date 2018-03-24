@@ -1,0 +1,3 @@
+vhdtdtfi -prj IMAGE_PROCESSING -o "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/reg_12b.vhi" -module reg_12b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generic_FF_12.vhd 
+vhdtdtfi -prj IMAGE_PROCESSING -o "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/reg_12b.vhi" -module reg_12b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generic_FF_12.vhd 
+vhdtdtfi -prj IMAGE_PROCESSING -o "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/reg_12b.vhi" -module reg_12b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generic_FF_12.vhd 

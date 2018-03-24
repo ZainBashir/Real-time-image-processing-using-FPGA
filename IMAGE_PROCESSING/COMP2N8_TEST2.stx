@@ -1,0 +1,78 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: COMP2N8_TEST2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\fifo_us.vhd" into library work
+Parsing entity <fifo_us>.
+Parsing architecture <fifo_us_a> of entity <fifo_us>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\generic_FF_us.vhd" into library work
+Parsing entity <reg_8b>.
+Parsing architecture <Behavioral> of entity <reg_8b>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" into library work
+Parsing entity <Cache_memory>.
+Parsing architecture <Behavioral> of entity <cache_memory>.
+ERROR:HDLCompiler:1731 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 82: found '0' definitions of operator "+", cannot determine exact overloaded matching definition for "+"
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 92: Syntax error near "gen1".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 93: Syntax error near "generate".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 95: Syntax error near "generic".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 96: Syntax error near "Port".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 101: Syntax error near ";".
+ERROR:HDLCompiler:841 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 103: Expecting type  void for <gen_if_1st>.
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 105: Syntax error near "generate".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 107: Syntax error near "generic".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 108: Syntax error near "Port".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 113: Syntax error near ";".
+ERROR:HDLCompiler:841 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 114: Expecting type  void for <gen_if_2st>.
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 116: Syntax error near "generate".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 118: Syntax error near "PORT".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 129: Syntax error near ";".
+ERROR:HDLCompiler:841 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 131: Expecting type  void for <gen_if_fifo1>.
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 133: Syntax error near "generate".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 135: Syntax error near "generic".
+ERROR:HDLCompiler:806 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 136: Syntax error near "Port".
+Sorry, too many errors..
+--> 
+
+Total memory usage is 291312 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

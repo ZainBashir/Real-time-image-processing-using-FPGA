@@ -1,0 +1,1 @@
+vhdtdtfi -prj IMAGE_PROCESSING -o "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/reg_8b.vhi" -module reg_8b -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generic_FF_us.vhd 

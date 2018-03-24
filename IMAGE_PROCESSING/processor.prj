@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/multiplier.vhd"
+vhdl work "ipcore_dir/adder_12b.vhd"
+vhdl work "ipcore_dir/adder_13b.vhd"
+vhdl work "ipcore_dir/adder_14b.vhd"
+vhdl work "ipcore_dir/adder_15b.vhd"
+vhdl work "ipcore_dir/divider_new.vhd"
+vhdl work "generic_FF_12.vhd"
+vhdl work "processor.vhd"

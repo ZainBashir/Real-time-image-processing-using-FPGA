@@ -1,0 +1,29 @@
+Command line:
+   read_lena_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57324
+
+Wed Jan 10 21:36:53 2018
+
+
+ Elaboration Time: 0.40625 sec
+
+ Current Memory Usage: 924.447 Meg
+
+ Total Signals          : 23350
+ Total Nets             : 36075
+ Total Signal Drivers   : 7771
+ Total Blocks           : 5001
+ Total Primitive Blocks : 4749
+ Total Processes        : 7388
+ Total Traceable Variables  : 5830
+ Total Scalar Nets and Variables : 62778
+Total Line Count : 17683
+
+ Total Simulation Time: 115.484 sec
+
+ Current Memory Usage: 1081.73 Meg
+
+Wed Jan 10 21:49:39 2018
+

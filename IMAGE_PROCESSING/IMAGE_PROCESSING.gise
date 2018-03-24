@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="IMAGE_PROCESSING.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="COMP2N8_TEST2.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="COMP2N8_TEST2.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="COMP2N8_TEST2.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="COMP2N8_TEST2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="COMP2N8_TEST2_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Cache_memory.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Cache_memory.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Cache_memory.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Cache_memory.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Cache_memory.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Cache_memory.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Cache_memory.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Cache_memory.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Cache_memory.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Cache_memory.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Cache_memory_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Cache_memory_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Cache_memory_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Cache_memory_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Cache_memory_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Cache_memory_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="adder_8.vhi"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="generic_FF_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="generic_FF_us_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="processor.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="processor.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="processor.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="processor.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="processor_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="processor_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="read_lena.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="read_lena.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="read_lena.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="read_lena.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="read_lena.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="read_lena.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="read_lena_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="read_lena_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="read_lena_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="read_lena_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="read_lena_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="read_lena_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="read_lena_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="reg_12b.vhi"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="reg_16b.vhi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_8b.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_8b.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="reg_8b.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_8b.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_fifo_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_fifo_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1514649177" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1514649177">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616341" xil_pn:in_ck="8816331575571142554" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515616341">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Cache_memory.vhd"/>
+      <outfile xil_pn:name="file_read_write.vhd"/>
+      <outfile xil_pn:name="generic_FF_12.vhd"/>
+      <outfile xil_pn:name="generic_FF_us.vhd"/>
+      <outfile xil_pn:name="processor.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616589" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9152275339768760679" xil_pn:start_ts="1515616589">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616589" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1632960567511305737" xil_pn:start_ts="1515616589">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1515380429" xil_pn:in_ck="-8571355843074486359" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3568020014734894335" xil_pn:start_ts="1515380428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/adder_12b.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/adder_12b.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/adder_13b.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/adder_13b.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/adder_14b.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/adder_14b.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/adder_15b.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/adder_15b.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/divider_new.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/divider_new.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/multiplier.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/multiplier.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616341" xil_pn:in_ck="8816331575571142554" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515616341">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Cache_memory.vhd"/>
+      <outfile xil_pn:name="file_read_write.vhd"/>
+      <outfile xil_pn:name="generic_FF_12.vhd"/>
+      <outfile xil_pn:name="generic_FF_us.vhd"/>
+      <outfile xil_pn:name="processor.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616610" xil_pn:in_ck="-3066126237077741948" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1606681185745499622" xil_pn:start_ts="1515616589">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="read_lena_beh.prj"/>
+      <outfile xil_pn:name="read_lena_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515616610" xil_pn:in_ck="-5689104945640848051" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8272510474762383449" xil_pn:start_ts="1515616610">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="read_lena_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1512138772" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1512138772">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1514820441" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3340904805708397742" xil_pn:start_ts="1514820441">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

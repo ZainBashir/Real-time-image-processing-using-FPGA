@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/fifo_us.vhd"
+vhdl work "generic_FF_us.vhd"
+vhdl work "Cache_memory.vhd"

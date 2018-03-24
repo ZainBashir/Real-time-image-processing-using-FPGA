@@ -1,0 +1,8 @@
+vhdl isim_temp "ipcore_dir/multiplier.vhd"
+vhdl isim_temp "ipcore_dir/divider_norm.vhd"
+vhdl isim_temp "ipcore_dir/adder_12b.vhd"
+vhdl isim_temp "ipcore_dir/adder_13b.vhd"
+vhdl isim_temp "ipcore_dir/adder_14b.vhd"
+vhdl isim_temp "ipcore_dir/adder_15b.vhd"
+vhdl isim_temp "generic_FF_12.vhd"
+vhdl isim_temp "processor.vhd"

@@ -1,0 +1,1222 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Cache_memory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Cache_memory.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Cache_memory"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Cache_memory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Move First FlipFlop Stage          : NO
+Move Last FlipFlop Stage           : NO
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : NO
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\fifo_us.vhd" into library work
+Parsing entity <fifo_us>.
+Parsing architecture <fifo_us_a> of entity <fifo_us>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\generic_FF_us.vhd" into library work
+Parsing entity <reg_8b>.
+Parsing architecture <Behavioral> of entity <reg_8b>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" into library work
+Parsing entity <Cache_memory>.
+Parsing architecture <Behavioral> of entity <cache_memory>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Cache_memory> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 52: Using initial value '1' for en since it is never assigned
+WARNING:HDLCompiler:871 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" Line 55: Using initial value "0001111011" for prog_full_thresh1 since it is never assigned
+
+Elaborating entity <reg_8b> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <fifo_us> (architecture <fifo_us_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Cache_memory>.
+    Related source file is "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd".
+        Bus_width = 8
+INFO:Xst:3210 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" line 168: Output port <full> of the instance <gen1[3].gen_if_fifo1.inst_fifo1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" line 196: Output port <full> of the instance <gen1[7].gen_if_fifo2.inst_fifo2> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <image_completed>.
+    Found 1-bit register for signal <wr_en1>.
+    Found 1-bit register for signal <wr_en2>.
+    Found 1-bit register for signal <neighborhood_ready1>.
+    Found 1-bit register for signal <counter<9>>.
+    Found 1-bit register for signal <counter<8>>.
+    Found 1-bit register for signal <counter<7>>.
+    Found 1-bit register for signal <counter<6>>.
+    Found 1-bit register for signal <counter<5>>.
+    Found 1-bit register for signal <counter<4>>.
+    Found 1-bit register for signal <counter<3>>.
+    Found 1-bit register for signal <counter<2>>.
+    Found 1-bit register for signal <counter<1>>.
+    Found 1-bit register for signal <counter<0>>.
+    Found 10-bit adder for signal <n0095> created at line 114.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Cache_memory> synthesized.
+
+Synthesizing Unit <reg_8b>.
+    Related source file is "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\generic_FF_us.vhd".
+        Bus_Width = 8
+    Found 8-bit register for signal <Q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_8b> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 23
+ 1-bit register                                        : 14
+ 8-bit register                                        : 9
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/fifo_us.ngc>.
+Loading core <fifo_us> for timing and area information for instance <gen1[3].gen_if_fifo1.inst_fifo1>.
+Loading core <fifo_us> for timing and area information for instance <gen1[7].gen_if_fifo2.inst_fifo2>.
+WARNING:Xst:1426 - The value init of the FF/Latch image_completed hinder the constant cleaning in the block Cache_memory.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 86
+ Flip-Flops                                            : 86
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch image_completed hinder the constant cleaning in the block Cache_memory.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    counter_0 in unit <Cache_memory>
+    counter_1 in unit <Cache_memory>
+    counter_2 in unit <Cache_memory>
+    counter_3 in unit <Cache_memory>
+    counter_5 in unit <Cache_memory>
+    counter_6 in unit <Cache_memory>
+    counter_4 in unit <Cache_memory>
+    counter_7 in unit <Cache_memory>
+    counter_8 in unit <Cache_memory>
+    counter_9 in unit <Cache_memory>
+
+
+Optimizing unit <reg_8b> ...
+
+Optimizing unit <Cache_memory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Cache_memory, actual ratio is 0.
+  -  INput port wr_en1:D has minslack=-1.031 - NO_RETIMING
+  -  INput port wr_en2:D has minslack=-1.031 - NO_RETIMING
+Replicating register gen1[9].gen_if_4st.inst4/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[9].gen_if_4st.inst4/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[8].gen_if_4st.inst4/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[6].gen_if_3st.inst3/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[5].gen_if_3st.inst3/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[4].gen_if_3st.inst3/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[2].gen_if_2st.inst2/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[1].gen_if_2st.inst2/Q_0 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_7 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_6 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_5 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_4 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_3 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_2 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_1 to handle IOB=TRUE attribute
+Replicating register gen1[0].gen_if_1st.inst1/Q_0 to handle IOB=TRUE attribute
+Replicating register neighborhood_ready1 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 151
+ Flip-Flops                                            : 151
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Cache_memory.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 324
+#      GND                         : 5
+#      INV                         : 6
+#      LUT2                        : 43
+#      LUT3                        : 22
+#      LUT4                        : 86
+#      LUT5                        : 12
+#      LUT6                        : 43
+#      MUXCY                       : 84
+#      VCC                         : 3
+#      XORCY                       : 20
+# FlipFlops/Latches                : 313
+#      FD                          : 12
+#      FD_1                        : 1
+#      FDC                         : 162
+#      FDCE                        : 90
+#      FDP                         : 26
+#      FDP_1                       : 10
+#      FDPE                        : 2
+#      LDC                         : 10
+# RAMS                             : 2
+#      RAMB18E1                    : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 107
+#      IBUF                        : 10
+#      OBUF                        : 97
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             240  out of  126800     0%  
+ Number of Slice LUTs:                  212  out of  63400     0%  
+    Number used as Logic:               212  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    372
+   Number with an unused Flip Flop:     132  out of    372    35%  
+   Number with an unused LUT:           160  out of    372    43%  
+   Number of fully used LUT-FF pairs:    80  out of    372    21%  
+   Number of unique control sets:        41
+
+IO Utilization: 
+ Number of IOs:                         108
+ Number of bonded IOBs:                 108  out of    210    51%  
+    IOB Flip Flops/Latches:              73
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                     | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------+------------------------+-------+
+DATA_READY                                                       | IBUF+BUFG              | 11    |
+clk                                                              | BUFGP                  | 294   |
+DATA_READY_counter[9]_AND_6_o(DATA_READY_counter[9]_AND_6_o1:O)  | NONE(*)(counter_9_LDC) | 1     |
+DATA_READY_counter[9]_AND_8_o(DATA_READY_counter[9]_AND_8_o1:O)  | NONE(*)(counter_8_LDC) | 1     |
+DATA_READY_counter[9]_AND_10_o(DATA_READY_counter[9]_AND_10_o1:O)| NONE(*)(counter_7_LDC) | 1     |
+DATA_READY_counter[9]_AND_16_o(DATA_READY_counter[9]_AND_16_o1:O)| NONE(*)(counter_4_LDC) | 1     |
+DATA_READY_counter[9]_AND_12_o(DATA_READY_counter[9]_AND_12_o1:O)| NONE(*)(counter_6_LDC) | 1     |
+DATA_READY_counter[9]_AND_14_o(DATA_READY_counter[9]_AND_14_o1:O)| NONE(*)(counter_5_LDC) | 1     |
+DATA_READY_counter[9]_AND_18_o(DATA_READY_counter[9]_AND_18_o1:O)| NONE(*)(counter_3_LDC) | 1     |
+DATA_READY_counter[9]_AND_20_o(DATA_READY_counter[9]_AND_20_o1:O)| NONE(*)(counter_2_LDC) | 1     |
+DATA_READY_counter[9]_AND_22_o(DATA_READY_counter[9]_AND_22_o1:O)| NONE(*)(counter_1_LDC) | 1     |
+DATA_READY_counter[9]_AND_24_o(DATA_READY_counter[9]_AND_24_o1:O)| NONE(*)(counter_0_LDC) | 1     |
+-----------------------------------------------------------------+------------------------+-------+
+(*) These 10 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.432ns (Maximum Frequency: 411.150MHz)
+   Minimum input arrival time before clock: 1.997ns
+   Maximum output required time after clock: 2.135ns
+   Maximum combinational path delay: 0.290ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.432ns (frequency: 411.150MHz)
+  Total number of paths / destination ports: 1810 / 558
+-------------------------------------------------------------------------
+Delay:               2.432ns (Levels of Logic = 14)
+  Source:            gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/prog_full_i (FF)
+  Destination:       gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/diff_pntr_pad_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/prog_full_i to gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/diff_pntr_pad_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.361   0.389  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/prog_full_i (prog_full)
+     end scope: 'gen1[7].gen_if_fifo2.inst_fifo2:prog_full'
+     LUT2:I0->O            3   0.097   0.566  Mmux_rd_en211 (rd_en2)
+     begin scope: 'gen1[7].gen_if_fifo2.inst_fifo2:rd_en'
+     LUT4:I0->O            0   0.097   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/wr_pntr_plus1_pad<0>_mand1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/wr_pntr_plus1_pad<0>_mand1)
+     MUXCY:DI->O           1   0.337   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<0> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<1> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<2> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<3> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<4> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<5> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<6> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<7> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<8> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<8>)
+     MUXCY:CI->O           0   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<9> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_cy<9>)
+     XORCY:CI->O           1   0.370   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/Madd_wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT_xor<10> (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/wr_pntr_plus1_pad[10]_rd_pntr_wr_inv_pad[10]_add_2_OUT<10>)
+     FDC:D                     0.008          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/diff_pntr_pad_10
+    ----------------------------------------
+    Total                      2.432ns (1.477ns logic, 0.955ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_6_o'
+  Clock period: 1.977ns (frequency: 505.740MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.977ns (Levels of Logic = 2)
+  Source:            counter_9_LDC (LATCH)
+  Destination:       counter_9_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_6_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_6_o falling
+
+  Data Path: counter_9_LDC to counter_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.383  counter_9_LDC (counter_9_LDC)
+     LUT3:I1->O            2   0.097   0.299  counter_91 (counter_9)
+     LUT6:I5->O            1   0.097   0.279  DATA_READY_counter[9]_AND_7_o1 (DATA_READY_counter[9]_AND_7_o)
+     LDC:CLR                   0.349          counter_9_LDC
+    ----------------------------------------
+    Total                      1.977ns (1.015ns logic, 0.962ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY'
+  Clock period: 2.230ns (frequency: 448.390MHz)
+  Total number of paths / destination ports: 65 / 10
+-------------------------------------------------------------------------
+Delay:               2.230ns (Levels of Logic = 2)
+  Source:            counter_3_P_3 (FF)
+  Destination:       counter_9_P_9 (FF)
+  Source Clock:      DATA_READY falling
+  Destination Clock: DATA_READY falling
+
+  Data Path: counter_3_P_3 to counter_9_P_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP_1:C->Q            3   0.364   0.703  counter_3_P_3 (counter_3_P_3)
+     LUT6:I0->O           10   0.097   0.337  Madd_n0095_cy<4>11 (Madd_n0095_cy<4>)
+     LUT6:I5->O            2   0.097   0.283  DATA_READY_counter[9]_AND_8_o1 (DATA_READY_counter[9]_AND_8_o)
+     FDP_1:PRE                 0.349          counter_8_P_8
+    ----------------------------------------
+    Total                      2.230ns (0.907ns logic, 1.323ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_8_o'
+  Clock period: 1.993ns (frequency: 501.832MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.993ns (Levels of Logic = 2)
+  Source:            counter_8_LDC (LATCH)
+  Destination:       counter_8_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_8_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_8_o falling
+
+  Data Path: counter_8_LDC to counter_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.472   0.389  counter_8_LDC (counter_8_LDC)
+     LUT3:I1->O            4   0.097   0.309  counter_81 (counter_8)
+     LUT6:I5->O            1   0.097   0.279  DATA_READY_counter[9]_AND_9_o1 (DATA_READY_counter[9]_AND_9_o)
+     LDC:CLR                   0.349          counter_8_LDC
+    ----------------------------------------
+    Total                      1.993ns (1.015ns logic, 0.978ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_10_o'
+  Clock period: 1.768ns (frequency: 565.739MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.768ns (Levels of Logic = 1)
+  Source:            counter_7_LDC (LATCH)
+  Destination:       counter_7_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_10_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_10_o falling
+
+  Data Path: counter_7_LDC to counter_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.472   0.570  counter_7_LDC (counter_7_LDC)
+     LUT6:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_11_o1 (DATA_READY_counter[9]_AND_11_o)
+     LDC:CLR                   0.349          counter_7_LDC
+    ----------------------------------------
+    Total                      1.768ns (0.918ns logic, 0.850ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_16_o'
+  Clock period: 1.899ns (frequency: 526.621MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.899ns (Levels of Logic = 2)
+  Source:            counter_4_LDC (LATCH)
+  Destination:       counter_4_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_16_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_16_o falling
+
+  Data Path: counter_4_LDC to counter_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.472   0.299  counter_4_LDC (counter_4_LDC)
+     LUT3:I2->O            3   0.097   0.305  counter_41 (counter_4)
+     LUT6:I5->O            1   0.097   0.279  DATA_READY_counter[9]_AND_17_o1 (DATA_READY_counter[9]_AND_17_o)
+     LDC:CLR                   0.349          counter_4_LDC
+    ----------------------------------------
+    Total                      1.899ns (1.015ns logic, 0.884ns route)
+                                       (53.5% logic, 46.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_12_o'
+  Clock period: 1.763ns (frequency: 567.086MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.763ns (Levels of Logic = 1)
+  Source:            counter_6_LDC (LATCH)
+  Destination:       counter_6_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_12_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_12_o falling
+
+  Data Path: counter_6_LDC to counter_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.472   0.566  counter_6_LDC (counter_6_LDC)
+     LUT6:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_13_o1 (DATA_READY_counter[9]_AND_13_o)
+     LDC:CLR                   0.349          counter_6_LDC
+    ----------------------------------------
+    Total                      1.763ns (0.918ns logic, 0.845ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_14_o'
+  Clock period: 1.521ns (frequency: 657.635MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.521ns (Levels of Logic = 1)
+  Source:            counter_5_LDC (LATCH)
+  Destination:       counter_5_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_14_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_14_o falling
+
+  Data Path: counter_5_LDC to counter_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.472   0.323  counter_5_LDC (counter_5_LDC)
+     LUT5:I4->O            1   0.097   0.279  DATA_READY_counter[9]_AND_15_o1 (DATA_READY_counter[9]_AND_15_o)
+     LDC:CLR                   0.349          counter_5_LDC
+    ----------------------------------------
+    Total                      1.521ns (0.918ns logic, 0.603ns route)
+                                       (60.4% logic, 39.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_18_o'
+  Clock period: 1.763ns (frequency: 567.086MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.763ns (Levels of Logic = 1)
+  Source:            counter_3_LDC (LATCH)
+  Destination:       counter_3_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_18_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_18_o falling
+
+  Data Path: counter_3_LDC to counter_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              3   0.472   0.566  counter_3_LDC (counter_3_LDC)
+     LUT6:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_19_o1 (DATA_READY_counter[9]_AND_19_o)
+     LDC:CLR                   0.349          counter_3_LDC
+    ----------------------------------------
+    Total                      1.763ns (0.918ns logic, 0.845ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_20_o'
+  Clock period: 1.768ns (frequency: 565.739MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.768ns (Levels of Logic = 1)
+  Source:            counter_2_LDC (LATCH)
+  Destination:       counter_2_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_20_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_20_o falling
+
+  Data Path: counter_2_LDC to counter_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              4   0.472   0.570  counter_2_LDC (counter_2_LDC)
+     LUT6:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_21_o1 (DATA_READY_counter[9]_AND_21_o)
+     LDC:CLR                   0.349          counter_2_LDC
+    ----------------------------------------
+    Total                      1.768ns (0.918ns logic, 0.850ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_22_o'
+  Clock period: 1.772ns (frequency: 564.175MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.772ns (Levels of Logic = 1)
+  Source:            counter_1_LDC (LATCH)
+  Destination:       counter_1_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_22_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_22_o falling
+
+  Data Path: counter_1_LDC to counter_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              5   0.472   0.575  counter_1_LDC (counter_1_LDC)
+     LUT6:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_23_o1 (DATA_READY_counter[9]_AND_23_o)
+     LDC:CLR                   0.349          counter_1_LDC
+    ----------------------------------------
+    Total                      1.772ns (0.918ns logic, 0.854ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DATA_READY_counter[9]_AND_24_o'
+  Clock period: 1.737ns (frequency: 575.838MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.737ns (Levels of Logic = 1)
+  Source:            counter_0_LDC (LATCH)
+  Destination:       counter_0_LDC (LATCH)
+  Source Clock:      DATA_READY_counter[9]_AND_24_o falling
+  Destination Clock: DATA_READY_counter[9]_AND_24_o falling
+
+  Data Path: counter_0_LDC to counter_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.472   0.539  counter_0_LDC (counter_0_LDC)
+     LUT4:I1->O            1   0.097   0.279  DATA_READY_counter[9]_AND_25_o1 (DATA_READY_counter[9]_AND_25_o)
+     LDC:CLR                   0.349          counter_0_LDC
+    ----------------------------------------
+    Total                      1.737ns (0.918ns logic, 0.819ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 168 / 168
+-------------------------------------------------------------------------
+Offset:              0.840ns (Levels of Logic = 2)
+  Source:            DATA_READY (PAD)
+  Destination:       wr_en1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: DATA_READY to wr_en1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.734  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT6:I1->O            1   0.097   0.000  wr_en1_rstpot (wr_en1_rstpot)
+     FD:D                      0.008          wr_en1
+    ----------------------------------------
+    Total                      0.840ns (0.106ns logic, 0.734ns route)
+                                       (12.6% logic, 87.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_6_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.683ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_9_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_6_o falling
+
+  Data Path: DATA_READY to counter_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.430  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I4->O            1   0.097   0.279  DATA_READY_counter[9]_AND_7_o1 (DATA_READY_counter[9]_AND_7_o)
+     LDC:CLR                   0.349          counter_9_LDC
+    ----------------------------------------
+    Total                      1.683ns (0.544ns logic, 1.139ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              1.864ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_9_P_9 (FF)
+  Destination Clock: DATA_READY falling
+
+  Data Path: DATA_READY to counter_9_P_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.607  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I2->O            2   0.097   0.283  DATA_READY_counter[9]_AND_6_o1 (DATA_READY_counter[9]_AND_6_o)
+     FDP_1:PRE                 0.349          counter_9_P_9
+    ----------------------------------------
+    Total                      1.864ns (0.544ns logic, 1.320ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_8_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.683ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_8_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_8_o falling
+
+  Data Path: DATA_READY to counter_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.430  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I4->O            1   0.097   0.279  DATA_READY_counter[9]_AND_9_o1 (DATA_READY_counter[9]_AND_9_o)
+     LDC:CLR                   0.349          counter_8_LDC
+    ----------------------------------------
+    Total                      1.683ns (0.544ns logic, 1.139ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_10_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.997ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_7_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_10_o falling
+
+  Data Path: DATA_READY to counter_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.744  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_11_o1 (DATA_READY_counter[9]_AND_11_o)
+     LDC:CLR                   0.349          counter_7_LDC
+    ----------------------------------------
+    Total                      1.997ns (0.544ns logic, 1.453ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_16_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.683ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_4_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_16_o falling
+
+  Data Path: DATA_READY to counter_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.430  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I4->O            1   0.097   0.279  DATA_READY_counter[9]_AND_17_o1 (DATA_READY_counter[9]_AND_17_o)
+     LDC:CLR                   0.349          counter_4_LDC
+    ----------------------------------------
+    Total                      1.683ns (0.544ns logic, 1.139ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_12_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.997ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_6_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_12_o falling
+
+  Data Path: DATA_READY to counter_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.744  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_13_o1 (DATA_READY_counter[9]_AND_13_o)
+     LDC:CLR                   0.349          counter_6_LDC
+    ----------------------------------------
+    Total                      1.997ns (0.544ns logic, 1.453ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_14_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.460ns (Levels of Logic = 2)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_5_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_14_o falling
+
+  Data Path: DATA_READY to counter_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.734  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT5:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_15_o1 (DATA_READY_counter[9]_AND_15_o)
+     LDC:CLR                   0.349          counter_5_LDC
+    ----------------------------------------
+    Total                      1.460ns (0.447ns logic, 1.013ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_18_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.997ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_3_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_18_o falling
+
+  Data Path: DATA_READY to counter_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.744  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_19_o1 (DATA_READY_counter[9]_AND_19_o)
+     LDC:CLR                   0.349          counter_3_LDC
+    ----------------------------------------
+    Total                      1.997ns (0.544ns logic, 1.453ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_20_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.997ns (Levels of Logic = 3)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_2_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_20_o falling
+
+  Data Path: DATA_READY to counter_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT2:I0->O           12   0.097   0.744  DATA_READY_DATA_READY_OR_10_o1 (DATA_READY_DATA_READY_OR_10_o)
+     LUT6:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_21_o1 (DATA_READY_counter[9]_AND_21_o)
+     LDC:CLR                   0.349          counter_2_LDC
+    ----------------------------------------
+    Total                      1.997ns (0.544ns logic, 1.453ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_22_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.470ns (Levels of Logic = 2)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_1_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_22_o falling
+
+  Data Path: DATA_READY to counter_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.744  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT6:I0->O            1   0.097   0.279  DATA_READY_counter[9]_AND_23_o1 (DATA_READY_counter[9]_AND_23_o)
+     LDC:CLR                   0.349          counter_1_LDC
+    ----------------------------------------
+    Total                      1.470ns (0.447ns logic, 1.023ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_READY_counter[9]_AND_24_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.156ns (Levels of Logic = 2)
+  Source:            DATA_READY (PAD)
+  Destination:       counter_0_LDC (LATCH)
+  Destination Clock: DATA_READY_counter[9]_AND_24_o falling
+
+  Data Path: DATA_READY to counter_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.001   0.430  DATA_READY_IBUF (DATA_READY_IBUF)
+     LUT4:I2->O            1   0.097   0.279  DATA_READY_counter[9]_AND_25_o1 (DATA_READY_counter[9]_AND_25_o)
+     LDC:CLR                   0.349          counter_0_LDC
+    ----------------------------------------
+    Total                      1.156ns (0.447ns logic, 0.709ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 89 / 89
+-------------------------------------------------------------------------
+Offset:              2.135ns (Levels of Logic = 2)
+  Source:            gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       sig1_dummy<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram to sig1_dummy<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO11    3   1.846   0.289  ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (DOUTB<7>)
+     end scope: 'gen1[7].gen_if_fifo2.inst_fifo2/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTB<7>'
+     end scope: 'gen1[7].gen_if_fifo2.inst_fifo2:dout<7>'
+     OBUF:I->O                 0.000          sig1_dummy_7_OBUF (sig1_dummy<7>)
+    ----------------------------------------
+    Total                      2.135ns (1.846ns logic, 0.289ns route)
+                                       (86.5% logic, 13.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               0.290ns (Levels of Logic = 2)
+  Source:            d_in<7> (PAD)
+  Destination:       d_out_dammy<7> (PAD)
+
+  Data Path: d_in<7> to d_out_dammy<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.289  d_in_7_IBUF (d_out_dammy_7_OBUF)
+     OBUF:I->O                 0.000          d_out_dammy_7_OBUF (d_out_dammy<7>)
+    ----------------------------------------
+    Total                      0.290ns (0.001ns logic, 0.289ns route)
+                                       (0.3% logic, 99.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DATA_READY
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.230|         |
+DATA_READY_counter[9]_AND_10_o|         |         |    2.540|         |
+DATA_READY_counter[9]_AND_12_o|         |         |    2.531|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    2.408|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    2.715|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.594|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.553|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.426|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.381|         |
+DATA_READY_counter[9]_AND_6_o |         |         |    2.197|         |
+DATA_READY_counter[9]_AND_8_o |         |         |    2.203|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_10_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.442|         |
+DATA_READY_counter[9]_AND_10_o|         |         |    1.768|         |
+DATA_READY_counter[9]_AND_12_o|         |         |    2.139|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    2.227|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    2.927|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.805|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.764|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.637|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.563|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_12_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.267|         |
+DATA_READY_counter[9]_AND_12_o|         |         |    1.763|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    1.605|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    2.711|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.589|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.549|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.421|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.347|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_14_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.442|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    1.521|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    2.927|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.805|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.764|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.637|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.563|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_16_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.199|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    1.899|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.523|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.522|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.404|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.377|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_18_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.267|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    1.763|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.134|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.227|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.377|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_20_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.267|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    1.768|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    1.595|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.161|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_22_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    1.814|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    1.772|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    1.521|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_24_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    1.674|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    1.737|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_6_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.614|         |
+DATA_READY_counter[9]_AND_10_o|         |         |    2.354|         |
+DATA_READY_counter[9]_AND_12_o|         |         |    2.400|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    2.576|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    3.099|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.977|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.936|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.809|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.734|         |
+DATA_READY_counter[9]_AND_6_o |         |         |    1.977|         |
+DATA_READY_counter[9]_AND_8_o |         |         |    2.513|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DATA_READY_counter[9]_AND_8_o
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |         |    2.614|         |
+DATA_READY_counter[9]_AND_10_o|         |         |    2.536|         |
+DATA_READY_counter[9]_AND_12_o|         |         |    2.355|         |
+DATA_READY_counter[9]_AND_14_o|         |         |    2.404|         |
+DATA_READY_counter[9]_AND_16_o|         |         |    3.099|         |
+DATA_READY_counter[9]_AND_18_o|         |         |    2.977|         |
+DATA_READY_counter[9]_AND_20_o|         |         |    2.936|         |
+DATA_READY_counter[9]_AND_22_o|         |         |    2.809|         |
+DATA_READY_counter[9]_AND_24_o|         |         |    2.734|         |
+DATA_READY_counter[9]_AND_8_o |         |         |    1.993|         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+DATA_READY                    |         |    3.096|         |         |
+DATA_READY_counter[9]_AND_10_o|         |    1.916|         |         |
+DATA_READY_counter[9]_AND_12_o|         |    3.178|         |         |
+DATA_READY_counter[9]_AND_14_o|         |    2.736|         |         |
+DATA_READY_counter[9]_AND_16_o|         |    3.120|         |         |
+DATA_READY_counter[9]_AND_18_o|         |    3.336|         |         |
+DATA_READY_counter[9]_AND_20_o|         |    3.218|         |         |
+DATA_READY_counter[9]_AND_22_o|         |    3.050|         |         |
+DATA_READY_counter[9]_AND_24_o|         |    1.802|         |         |
+DATA_READY_counter[9]_AND_6_o |         |    2.928|         |         |
+DATA_READY_counter[9]_AND_8_o |         |    1.588|         |         |
+clk                           |    2.432|         |         |         |
+------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.69 secs
+ 
+--> 
+
+Total memory usage is 410712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

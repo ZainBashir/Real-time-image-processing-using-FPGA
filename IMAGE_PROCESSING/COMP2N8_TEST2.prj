@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/fifo_us.vhd"
+vhdl work "generic_FF_us.vhd"
+vhdl work "Cache_memory.vhd"
+vhdl work "comp2n8_t2.vhd"

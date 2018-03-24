@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="read_lena" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/read_lena/original_pixel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">original_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">original_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/processed_pixel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">processed_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">processed_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/flag_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flag_read</obj_property>
+      <obj_property name="ObjectShortName">flag_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/file_written" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">file_written</obj_property>
+      <obj_property name="ObjectShortName">file_written</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/\gen1(3)\/gen_if_fifo1/inst_fifo1/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/\gen1(3)\/gen_if_fifo1/inst_fifo1/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/\gen1(3)\/gen_if_fifo1/inst_fifo1/prog_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">prog_full</obj_property>
+      <obj_property name="ObjectShortName">prog_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/pixel_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pixel_write[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_write[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/neighborhood_ready1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">neighborhood_ready1</obj_property>
+      <obj_property name="ObjectShortName">neighborhood_ready1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/image_completed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">image_completed</obj_property>
+      <obj_property name="ObjectShortName">image_completed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/prog_full1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">prog_full1</obj_property>
+      <obj_property name="ObjectShortName">prog_full1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/prog_full2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">prog_full2</obj_property>
+      <obj_property name="ObjectShortName">prog_full2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/data_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/neighborhood_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">neighborhood_ready</obj_property>
+      <obj_property name="ObjectShortName">neighborhood_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[9:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/wr_en1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en1</obj_property>
+      <obj_property name="ObjectShortName">wr_en1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/rd_en1" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rd_en1</obj_property>
+      <obj_property name="ObjectShortName">rd_en1</obj_property>
+      <obj_property name="label">rd_en1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/wr_en2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en2</obj_property>
+      <obj_property name="ObjectShortName">wr_en2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/rd_en2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en2</obj_property>
+      <obj_property name="ObjectShortName">rd_en2</obj_property>
+   </wvobject>
+</wave_config>

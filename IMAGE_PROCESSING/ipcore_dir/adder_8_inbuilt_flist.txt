@@ -1,0 +1,15 @@
+# Output products list for <adder_8_inbuilt>
+_xmsgs\pn_parser.xmsgs
+adder_8_inbuilt.asy
+adder_8_inbuilt.gise
+adder_8_inbuilt.ngc
+adder_8_inbuilt.sym
+adder_8_inbuilt.vhd
+adder_8_inbuilt.vho
+adder_8_inbuilt.xco
+adder_8_inbuilt.xise
+adder_8_inbuilt\doc\c_addsub_v11_0_readme.txt
+adder_8_inbuilt\doc\c_addsub_v11_0_vinfo.html
+adder_8_inbuilt\doc\ds214_addsub.pdf
+adder_8_inbuilt_flist.txt
+adder_8_inbuilt_xmdf.tcl

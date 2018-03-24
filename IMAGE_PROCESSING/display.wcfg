@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="read_lena" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/read_lena/original_pixel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">original_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">original_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/processed_pixel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">processed_pixel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">processed_pixel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/file_written" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">file_written</obj_property>
+      <obj_property name="ObjectShortName">file_written</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/pixel_write" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pixel_write[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_write[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/read_lena/Inst_Cache_memory/\gen1(3)\/gen_if_fifo1/inst_fifo1/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+</wave_config>

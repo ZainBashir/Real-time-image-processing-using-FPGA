@@ -1,0 +1,172 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: read_lena.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "read_lena.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "read_lena"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : read_lena
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Move First FlipFlop Stage          : NO
+Move Last FlipFlop Stage           : NO
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : NO
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\fifo_us.vhd" into library work
+Parsing entity <fifo_us>.
+Parsing architecture <fifo_us_a> of entity <fifo_us>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\multiplier.vhd" into library work
+Parsing entity <multiplier>.
+Parsing architecture <multiplier_a> of entity <multiplier>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\adder_20_inbuilt.vhd" into library work
+Parsing entity <adder_20_inbuilt>.
+Parsing architecture <adder_20_inbuilt_a> of entity <adder_20_inbuilt>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\reg_16b.vhd" into library work
+Parsing entity <reg_16b>.
+Parsing architecture <Behavioral> of entity <reg_16b>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\divider_norm.vhd" into library work
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\generic_FF_us.vhd" into library work
+Parsing entity <reg_8b>.
+Parsing architecture <Behavioral> of entity <reg_8b>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" into library work
+Parsing entity <processor>.
+Parsing architecture <Behavioral> of entity <processor>.
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 310: Actual for formal port a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 311: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 320: Actual for formal port a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 321: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 330: Actual for formal port a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 331: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 340: Actual for formal port a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 341: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 415: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 428: Actual for formal port s_axis_dividend_tdata is neither a static name nor a globally static expression
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\Cache_memory.vhd" into library work
+Parsing entity <Cache_memory>.
+Parsing architecture <Behavioral> of entity <cache_memory>.
+Parsing VHDL file "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" into library work
+Parsing entity <read_lena>.
+Parsing architecture <arch_read_lena> of entity <read_lena>.
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 175: Actual for formal port pixel0 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 176: Actual for formal port pixel1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 177: Actual for formal port pixel2 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 178: Actual for formal port pixel3 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 179: Actual for formal port pixel4 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 180: Actual for formal port pixel5 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 181: Actual for formal port pixel6 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 182: Actual for formal port pixel7 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 183: Actual for formal port pixel8 is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <read_lena> (architecture <arch_read_lena>) from library <work>.
+ERROR:HDLCompiler:890 - "D:\Zain\Study material\Semester 3\FPGA\image_processing\IMAGE_PROCESSING\file_read_write.vhd" Line 87: wait statement without UNTIL clause not supported for synthesis
+Netlist read_lena(arch_read_lena) remains a blackbox, due to errors in its contents
+--> 
+
+Total memory usage is 291056 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

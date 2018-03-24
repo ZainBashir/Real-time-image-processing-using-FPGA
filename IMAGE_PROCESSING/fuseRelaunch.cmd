@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/read_lena_isim_beh.exe" -prj "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/read_lena_beh.prj" "work.read_lena" 

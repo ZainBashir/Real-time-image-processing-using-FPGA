@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena.xst" -ofn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena.syr" 
+xst -intstyle ise -ifn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena.xst" -ofn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/read_lena.syr" 

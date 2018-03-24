@@ -1,0 +1,76 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\multiplier.vhd" into library work
+Parsing entity <multiplier>.
+Parsing architecture <multiplier_a> of entity <multiplier>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\adder_12b.vhd" into library work
+Parsing entity <adder_12b>.
+Parsing architecture <adder_12b_a> of entity <adder_12b>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\adder_13b.vhd" into library work
+Parsing entity <adder_13b>.
+Parsing architecture <adder_13b_a> of entity <adder_13b>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\adder_14b.vhd" into library work
+Parsing entity <adder_14b>.
+Parsing architecture <adder_14b_a> of entity <adder_14b>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\adder_15b.vhd" into library work
+Parsing entity <adder_15b>.
+Parsing architecture <adder_15b_a> of entity <adder_15b>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\ipcore_dir\divider_new.vhd" into library work
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\generic_FF_12.vhd" into library work
+Parsing entity <reg_12b>.
+Parsing architecture <Behavioral> of entity <reg_12b>.
+Parsing VHDL file "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" into library work
+Parsing entity <processor>.
+Parsing architecture <Behavioral> of entity <processor>.
+WARNING:HDLCompiler:946 - "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 506: Actual for formal port b is neither a static name nor a globally static expression
+ERROR:HDLCompiler:69 - "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 519: <quotient> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 519: Actual of formal out port quotient cannot be an expression
+ERROR:HDLCompiler:854 - "C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd" Line 51: Unit <behavioral> ignored due to previous errors.
+VHDL file C:\Users\Zain\Desktop\FPGA\image_processing\IMAGE_PROCESSING\processor.vhd ignored due to errors
+--> 
+
+Total memory usage is 288456 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

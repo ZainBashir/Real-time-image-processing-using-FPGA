@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.xst" -ofn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.syr" 
+vhdtdtfi -lib work generic_FF_us.vhd -lib work Cache_memory.vhd -prj IMAGE_PROCESSING -o Cache_memory.spl -module Cache_memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Cache_memory.spl {D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.sym} 
+xst -intstyle ise -ifn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.xst" -ofn "D:/Zain/Study material/Semester 3/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.syr" 

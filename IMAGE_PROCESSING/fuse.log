@@ -1,0 +1,88 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/read_lena_isim_beh.exe -prj C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/read_lena_beh.prj work.read_lena 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/fifo_us.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/multiplier.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/adder_12b.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/adder_13b.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/adder_14b.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/adder_15b.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/ipcore_dir/divider_new.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/generic_FF_us.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/generic_FF_12.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/processor.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/processor.vhd" Line 516: Actual for formal port b is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/Cache_memory.vhd" into library work
+Parsing VHDL file "C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/file_read_write.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity reg_8b [\reg_8b(8)\]
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_ss [\fifo_generator_v9_3_bhv_ss(10,8...]
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(1,0,10...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(1,0,10,"Bla...]
+Compiling architecture fifo_us_a of entity fifo_us [fifo_us_default]
+Compiling architecture behavioral of entity Cache_memory [\Cache_memory(8)\]
+Compiling package vcomponents
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling package std_logic_signed
+Compiling package bip_utils_pkg_v2_0
+Compiling package mult_gen_pkg_v11_2
+Compiling architecture behavioral of entity mult_gen_v11_2 [\mult_gen_v11_2(0,0,"artix7",4,0...]
+Compiling architecture multiplier_a of entity multiplier [multiplier_default]
+Compiling architecture behavioral of entity reg_12b [\reg_12b(12)\]
+Compiling package xbip_addsub_v2_0_comp
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(13,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(12,12,13,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"artix7",0,12,...]
+Compiling architecture adder_12b_a of entity adder_12b [adder_12b_default]
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture gnd_v of entity GND [gnd_default]
+Compiling architecture srlc16e_v of entity SRLC16E [\SRLC16E("0000000000000000")(0,1...]
+Compiling architecture fde_v of entity FDE [\FDE('0')\]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0010")(0,3)\]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("10010110")(0,7)\]
+Compiling architecture lut6_v of entity LUT6 [\LUT6("0110011001100110011001100...]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("1110")(0,3)\]
+Compiling architecture lut5_v of entity LUT5 [\LUT5("0110011001100110011001100...]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("0110011001101100")(0,15)\]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
+Compiling architecture structure of entity divider_new [divider_new_default]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(14,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(13,13,14,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"artix7",0,13,...]
+Compiling architecture adder_13b_a of entity adder_13b [adder_13b_default]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(15,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(14,14,15,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"artix7",0,14,...]
+Compiling architecture adder_14b_a of entity adder_14b [adder_14b_default]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(16,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(15,15,16,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"artix7",0,15,...]
+Compiling architecture adder_15b_a of entity adder_15b [adder_15b_default]
+Compiling architecture behavioral of entity processor [processor_default]
+Compiling architecture arch_read_lena of entity read_lena
+Time Resolution for simulation is 1ps.
+Waiting for 54 sub-compilation(s) to finish...
+Compiled 122 VHDL Units
+Built simulation executable C:/Users/Zain/Desktop/FPGA/image_processing/IMAGE_PROCESSING/read_lena_isim_beh.exe
+Fuse Memory Usage: 77464 KB
+Fuse CPU Usage: 2140 ms

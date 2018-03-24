@@ -1,0 +1,13 @@
+# Output products list for <divider_new>
+_xmsgs\pn_parser.xmsgs
+divider_new.asy
+divider_new.gise
+divider_new.ngc
+divider_new.sym
+divider_new.vhd
+divider_new.vho
+divider_new.xco
+divider_new.xise
+divider_new_flist.txt
+divider_new_readme.txt
+divider_new_xmdf.tcl

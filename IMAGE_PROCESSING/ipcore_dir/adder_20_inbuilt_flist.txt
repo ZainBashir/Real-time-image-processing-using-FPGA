@@ -1,0 +1,15 @@
+# Output products list for <adder_20_inbuilt>
+_xmsgs\pn_parser.xmsgs
+adder_20_inbuilt.asy
+adder_20_inbuilt.gise
+adder_20_inbuilt.ngc
+adder_20_inbuilt.sym
+adder_20_inbuilt.vhd
+adder_20_inbuilt.vho
+adder_20_inbuilt.xco
+adder_20_inbuilt.xise
+adder_20_inbuilt\doc\c_addsub_v11_0_readme.txt
+adder_20_inbuilt\doc\c_addsub_v11_0_vinfo.html
+adder_20_inbuilt\doc\ds214_addsub.pdf
+adder_20_inbuilt_flist.txt
+adder_20_inbuilt_xmdf.tcl

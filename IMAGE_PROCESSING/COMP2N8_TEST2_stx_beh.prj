@@ -1,0 +1,4 @@
+vhdl isim_temp "ipcore_dir/fifo_us.vhd"
+vhdl isim_temp "generic_FF_us.vhd"
+vhdl isim_temp "Cache_memory.vhd"
+vhdl isim_temp "comp2n8_t2.vhd"
