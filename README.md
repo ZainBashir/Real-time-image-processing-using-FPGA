@@ -5,7 +5,7 @@ Semester project for Real-time Image processing module
 Masters in Computer Vision (MSCV- VIBOT) - University of Burgundy
 
 
-HOW TO USE
+##HOW TO USE
 
 -Open the file IMAGE_PROCSSING.xise and you're good to go.
 
